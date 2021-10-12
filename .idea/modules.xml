@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AfleveringFravær/AfleveringFravær.iml" filepath="$PROJECT_DIR$/AfleveringFravær/AfleveringFravær.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag10Arrays/Dag10Arrays.iml" filepath="$PROJECT_DIR$/Dag10Arrays/Dag10Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag11ArrayLists/Dag11ArrayLists.iml" filepath="$PROJECT_DIR$/Dag11ArrayLists/Dag11ArrayLists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag12DobbeltArrays/Dag12DobbeltArrays.iml" filepath="$PROJECT_DIR$/Dag12DobbeltArrays/Dag12DobbeltArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag2/Dag2.iml" filepath="$PROJECT_DIR$/Dag2/Dag2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag3/Dag3.iml" filepath="$PROJECT_DIR$/Dag3/Dag3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag4/Dag4.iml" filepath="$PROJECT_DIR$/Dag4/Dag4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag5simpleTyper/Dag5simpleTyper.iml" filepath="$PROJECT_DIR$/Dag5simpleTyper/Dag5simpleTyper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag6IfStatements/Dag6IfStatements.iml" filepath="$PROJECT_DIR$/Dag6IfStatements/Dag6IfStatements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag7Repetetion/Dag7Repetetion.iml" filepath="$PROJECT_DIR$/Dag7Repetetion/Dag7Repetetion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag8WhileLøkker/Dag8WhileLøkker.iml" filepath="$PROJECT_DIR$/Dag8WhileLøkker/Dag8WhileLøkker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag9ForLøkker/Dag9ForLøkker.iml" filepath="$PROJECT_DIR$/Dag9ForLøkker/Dag9ForLøkker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pro1.iml" filepath="$PROJECT_DIR$/.idea/Pro1.iml" />
+    </modules>
+  </component>
+</project>
