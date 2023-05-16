@@ -60,13 +60,7 @@ public class Opgave2DobbelArray {
         // skakbræt
         for (int i = 0; i < values.length; i++) {
             for (int j = 0; j < values[i].length; j++) {
-                if (i % 2 == 0 & j % 2 == 1){
-                    values[i][j] = 1;
-                } else if (i % 2 == 1 && j % 2 == 0){
-                    values[i][j] = 1;
-                } else{
-                    values[i][j] = 0;
-                }
+                values[i][j] = (i+j) % 2;
             }
         }
 

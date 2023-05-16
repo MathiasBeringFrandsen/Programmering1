@@ -14,7 +14,7 @@ public class AfproevFravaersSystem {
         System.out.println("Antal elever uden fravær: " + fraværsSystem.antalUdenFravaer(fravaer21S));
         System.out.println("Eleven med mest fravær: " + fraværsSystem.mestFravaer(fravaer21S));
         fraværsSystem.nulstil(fravaer21S, 4);
-        fraværsSystem.udskrivFravaer(fravaer21S);
+//        fraværsSystem.udskrivFravaer(fravaer21S);
 
     }
 }

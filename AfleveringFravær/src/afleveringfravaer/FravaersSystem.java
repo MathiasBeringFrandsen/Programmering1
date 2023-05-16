@@ -7,11 +7,12 @@ public class FravaersSystem {
      * @param fravaer
      */
     public void udskrivFravaer(int[][] fravaer) {
-        for (int i = 0; i < fravaer.length; i++){
+        for (int i = 0; i < fravaer.length; i++) {
             System.out.println();
-            System.out.print("Elev " + (i+1) + ": ");
-            for (int j = 0; j < fravaer[i].length; j++){
-                System.out.print("Måned " + (j + 1) + ": " + fravaer[i][j] + " ");
+            System.out.println();
+            System.out.print("Elev " + (i + 1) + ": ");
+            for (int j = 0; j < fravaer[i].length; j++) {
+                System.out.print("Måned " + (j + 1) + ": " + fravaer[i][j] + " dages fravær. ");
             }
         }
     }
@@ -26,7 +27,7 @@ public class FravaersSystem {
      */
     public int samletFravaer(int[][] fravaer, int elevNr) {
         int sum = 0;
-        for (int i = 0; i < fravaer[elevNr - 1].length; i++){
+        for (int i = 0; i < fravaer[elevNr - 1].length; i++) {
             sum = sum + fravaer[elevNr - 1][i];
         }
         return sum;
@@ -42,10 +43,10 @@ public class FravaersSystem {
      */
     public double gennemsnit(int[][] fravaer, int elevNr) {
         double sum = 0;
-        for (int i = 0; i < fravaer[elevNr - 1].length; i++){
+        for (int i = 0; i < fravaer[elevNr - 1].length; i++) {
             sum = (sum + fravaer[elevNr - 1][i]);
         }
-        return sum  / fravaer[elevNr - 1].length;
+        return sum / fravaer[elevNr - 1].length;
     }
 
     /**
@@ -56,8 +57,8 @@ public class FravaersSystem {
      */
     public int antalUdenFravaer(int[][] fravaer) {
         int antalUdenFravaer = 0;
-        for (int i = 0; i < fravaer.length; i++){
-            if (samletFravaer(fravaer, i + 1) == 0){
+        for (int i = 1; i <= fravaer.length; i++) {
+            if (samletFravaer(fravaer, i) == 0) {
                 antalUdenFravaer++;
             }
         }
@@ -75,10 +76,10 @@ public class FravaersSystem {
     public int mestFravaer(int[][] fravaer) {
         int højesteFraværsTimer = 0;
         int værsteElev = 0;
-        for (int i = 0; i < fravaer.length; i++){
-            if (samletFravaer(fravaer, i + 1) > højesteFraværsTimer){
-                højesteFraværsTimer = samletFravaer(fravaer, i+ 1);
-                værsteElev = i+1;
+        for (int i = 1; i <= fravaer.length; i++) {
+            if (samletFravaer(fravaer, i) > højesteFraværsTimer) {
+                højesteFraværsTimer = samletFravaer(fravaer, i);
+                værsteElev = i;
             }
         }
         return værsteElev;
@@ -92,7 +93,7 @@ public class FravaersSystem {
      * @param elevNr
      */
     public void nulstil(int[][] fravaer, int elevNr) {
-        for (int i = 0; i < fravaer.length; i++){
+        for (int i = 0; i < fravaer.length; i++) {
             fravaer[elevNr - 1][i] = 0;
         }
     }

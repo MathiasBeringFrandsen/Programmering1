@@ -16,9 +16,9 @@ public class TheaterFloor {
 
     public int buySeat(int row, int seat) {
         int returnValue = 0;
-        if (seats[row][seat] != 0) {
-            returnValue = seats[row][seat];
-            seats[row][seat] = 0;
+        if (seats[row - 1][seat - 1] != 0) {
+            returnValue = seats[row - 1][seat - 1];
+            seats[row - 1][seat - 1] = 0;
             System.out.println("God fornøjelse med dit køb");
         } else {
             System.out.println("pladsen er allerede solgt");
@@ -30,7 +30,6 @@ public class TheaterFloor {
      * Hvis der er en plads ledig med den pågældende pris, reserveres pladsen og
      * prisen returneres. Der returneres 0, hvis der ikke er nogen pladser ledige
      * til den pågældende pris.
-
      */
     public int buySeat(int price) {
         int returnValue = 0;
@@ -38,7 +37,7 @@ public class TheaterFloor {
         for (int i = 0; i < seats.length; i++) {
             for (int j = 0; j < seats[i].length; j++) {
                 if (seats[i][j] == price && !seatBought) {
-                    returnValue = seats[i][j];
+                    returnValue = price;
                     seats[i][j] = 0;
                     seatBought = true;
                     System.out.println("God fornøjelse med dit køb");
@@ -74,7 +73,7 @@ public class TheaterFloor {
                 System.out.println("Hvad skal billetten koste?");
                 buySeat(scan.nextInt());
                 ticketBought = true;
-            } else if (købsMetode.equalsIgnoreCase("plads")){
+            } else if (købsMetode.equalsIgnoreCase("plads")) {
                 System.out.println("Hvor vil du sidde? Først række, så sæde");
                 buySeat(scan.nextInt(), scan.nextInt());
                 ticketBought = true;
